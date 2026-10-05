@@ -2,16 +2,16 @@
 #this teaches the bookkeeping: how a trade changes your position and cash, and how you compute P&L
 
 import random
-random.seed(5)
+random.seed(1)
 
 #------------ 1 THE MARKET ----------
 fair = 100.0 #fair value right now
-half_spread = 1.0
+HALF_SPREAD = 1.0
 
 #------------ 2 MY QUOTE ----------
 #we quote symmetrically around fair value
-bid = fair - half_spread # bid < ask
-ask = fair + half_spread
+bid = fair - HALF_SPREAD # bid < ask
+ask = fair + HALF_SPREAD
 print(f"My quote : {bid} / {ask}")
 
 #------------ 3 MY BOOKS ----------
